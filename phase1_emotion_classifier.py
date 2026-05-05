@@ -1,21 +1,3 @@
-"""
-BIL216 Final Project - PHASE 1 BOOSTED Emotion Classification
-
-Put this file in the same folder as:
-    master_metadata.xlsx
-    dataset/
-
-Run:
-    pip install -r requirements.txt
-    python phase1_emotion_classifier_BOOSTED.py
-
-Outputs:
-    phase1_boosted_summary.xlsx
-    phase1_boosted_results.csv
-    phase1_boosted_feature_table.csv
-    phase1_boosted_model.pkl
-"""
-
 import os
 import re
 import pickle
@@ -41,8 +23,7 @@ AUDIO_SAMPLE_RATE = 22050
 RANDOM_STATE = 42
 TEST_SIZE = 0.20
 
-# Your file names seem to use Furious / Neutral / Shocked.
-# The project emotions are Neutral, Happy, Angry, Sad, Surprised.
+
 EMOTION_MAP = {
     "furious": "Angry",
     "angry": "Angry",
